@@ -36,7 +36,7 @@ let persons = [
 const generateId = () => {
     const max = 10000
     const min = 5000
-    return Math.floor(Math.random() * (max - min) + min)
+    return String(Math.floor(Math.random() * (max - min) + min))
 }
 
 app.get('/api/persons', (request, response) => {
